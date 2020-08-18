@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cat vs Dog Classifier</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <main role="main" class="container">
+      <div id="loader">
+        <div class="spinner-grow" role="status" style="width: 12rem; height: 12rem;">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <p>Loading trained model...</p>
+      </div>
+      <div id="classifier">
+        <div class="heading">
+          <h1> Chest X-Ray PNEUMONIA Classifier</h1>
+          <p class="lead">The <i>Pneumonia Classifier</i> is a deep learning model that was built with Keras and Tensorflow by Shawn Gonsalves under the guidance of Dr. Xin Ye and was then exported as a JSON file to be used in the browser using Tensorflow.js to classify Chest X-ray images of Normal person and person having Pneumonia .</p>
+          <p class="lead"> Contacts:</p>
+          <p class="lead">Shawn : gonsalveshawn@gmail.com</p>
+          <p class="lead">Dr. Ye : ye@csusm.edu</p>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+              <img id="img" src="validation-xrays/PNEUMONIA/person1951_bacteria_4882.jpeg" width=150 height=150 />
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm button-row">
+              <label class="btn btn-primary" for="my-file-selector">
+                  <input id="my-file-selector" type="file" class="d-none" onchange="changeImage()" accept="image/jpeg, image/png">
+                  Upload New Picture
+              </label>
+              <label class="btn btn-primary class-b" for="predict">
+                  <input id="predict" type="button" class="d-none" >
+                  Predict
+              </label>
+            </div>
+        </div>
+      </div>
+    </main>
+    
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
