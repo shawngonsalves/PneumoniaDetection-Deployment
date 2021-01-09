@@ -18,6 +18,6 @@ The dataset was found and downloaded from the Kaggle website. The Chest Xray dat
 ![](images/sunglassesOutput.png)
 Fig.1 represents the graph of the number of Pneumonia and Normal images.
 For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing some unreadable scans and all low-quality images. Two expert physicians then graded the diagnoses for the images before being cleared for training the AI system. The evaluation dataset was then checked by a third expert in order to account for any grading errors.
-![](images/sunglassesOutput.png)
+![](Images_Pneumonia_Research/Test_dataset.png)
 The above Graphical representation shows the number of Test Normal and Pneumonia images.
 We see that the data here is imbalanced, so we want to augment the training images by applying some transformations to increase the number of examples.
