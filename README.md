@@ -25,3 +25,10 @@ For the analysis of chest x-ray images, all chest radiographs were initially scr
 
 The above Graphical representation shows the number of Test Normal and Pneumonia images.
 We see that the data here is imbalanced, so we want to augment the training images by applying some transformations to increase the number of examples.
+
+# Data Preprocessing and Augmentation
+The training images of Normal Chest X-Ray were much smaller than its Pneumonia counterpart. Thus, the model could overfit because it may not generalize the image of Normal X-ray of training directory. So we need to augment the size of the training directory artificially. Thus to Augment the number of training Normal X-ray images, some preprocessing was done on those images.  
+
+![](Images_Pneumonia_Research/Train_Normal.png)
+Fig.3  represents the original version of the image, as found in the dataset. Whenever we want to train our model using CNN to recognize images or objects, in general, we want it to detect that image regardless of its size or position in the image. 
+The value of each pixel in the image data is an integer in the range [0,255]. For the model to work correctly, these values need to be normalized to the range [0,1]
