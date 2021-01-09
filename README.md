@@ -15,9 +15,11 @@ The advancements in Computer Vision along with Deep Learning, has been construct
 
 # Dataset
 The dataset was found and downloaded from the Kaggle website. The Chest Xray dataset is organized into 3 separate directories: the train directory, test directory, Validation directory and contains sub-directories for each image category (Pneumonia/Normal). So there are a total of 5,863 frontal Chest X-Ray images and 2 categories (Pneumonia/Normal) as positive and negative Pneumonia images respectively.
-![](images/sunglassesOutput.png)
+![](Images_Pneumonia_Research/Train_dataset.png)
+
 Fig.1 represents the graph of the number of Pneumonia and Normal images.
 For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing some unreadable scans and all low-quality images. Two expert physicians then graded the diagnoses for the images before being cleared for training the AI system. The evaluation dataset was then checked by a third expert in order to account for any grading errors.
 ![](Images_Pneumonia_Research/Test_dataset.png)
+
 The above Graphical representation shows the number of Test Normal and Pneumonia images.
 We see that the data here is imbalanced, so we want to augment the training images by applying some transformations to increase the number of examples.
