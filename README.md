@@ -32,3 +32,6 @@ The training images of Normal Chest X-Ray were much smaller than its Pneumonia c
 ![](Images_Pneumonia_Research/Train_Normal.png)
 Fig.3  represents the original version of the image, as found in the dataset. Whenever we want to train our model using CNN to recognize images or objects, in general, we want it to detect that image regardless of its size or position in the image. 
 The value of each pixel in the image data is an integer in the range [0,255]. For the model to work correctly, these values need to be normalized to the range [0,1]
+![](Images_Pneumonia_Research/Transformation.png)
+After applying these transformations our image can look something like in the above figure. By applying just a couple of these transformations to our training data, we can easily augment the number of training examples and create a very robust model as shown in Fig.6. Some popular augmentations people use are grayscales, horizontal flips, vertical flips, random crops, color jitters, translations, rotations, and much more.We kept the test and validation images as it is because we want it after our model has done its training.
+
