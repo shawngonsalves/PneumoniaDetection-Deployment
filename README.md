@@ -37,7 +37,7 @@ After applying these transformations our image can look something like in the ab
 
 # Model Creation and Architecture
 
-![](Images_Pneumonia_Research/Train_Normal.png)
+![](Images_Pneumonia_Research/Model.png)
 
 In the creation of our model, we are using Convolutional Neural Networks.[7] The model can only process images with one input size. So the model is first converted to that specific height and width. The first layer is a Conv2D filter (3,3) being applied to the input image and creating 32 output (convoluted) images. So we are going from a single input image to 32 convoluted output images after applying this layer to our model. After that, the 32 outputs are reduced in size using a MaxPooling2D (2,2) with a stride of 2. Stride is the number of pixels shifts over the input matrix. When the stride value is 1 then we move the filters to 1 pixel at a time. When the stride is 2 then we move the filters to 2 pixels at a time and so on.
 The next three combinations of Conv2D and max-pooling layers have units 64 and two 128’s, respectively. So we create 64 convoluted outputs in the second round of the Conv and max-pooling layer and 128 convoluted output images in the remaining two rounds. 
