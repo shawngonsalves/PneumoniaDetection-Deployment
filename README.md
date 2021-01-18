@@ -49,3 +49,26 @@ The final layers of the model are the Dense layer with 512 neurons with RELU as 
 The trained model is ready for the inference process. The model can be saved in the path specified using the model.save() method. The entire model can be saved in two different file formats (SavedModel and HDF5) and be used without access to the original Python code.
 Ater this, The trained model is ready for the inference process. The model can be saved in the path specified using the model.save() method. The entire model can be saved in two different file formats (SavedModel and HDF5) and be used without access to the original Python code.
 
+# Results
+
+The inference process in Image Classification begins by using the files.upload() method to input the image. This image gets converted to a NumPy array and its shape is expanded by using the np.expand_dims() function. The processed image is then rescaled and fed into the model.predict() method for inference
+
+![](Images_Pneumonia_Research/res1.png)
+
+Fig 7 is from the Val directory and Normal sub-directory and the model correctly predicts the class of the image (Normal).
+
+![](Images_Pneumonia_Research/res2.png)
+
+
+Fig 8 is from the test directory and PNEUMONIA sub directory and the model correctly predicts the class of the image (PNEUMONIA).
+
+
+![](Images_Pneumonia_Research/res3.png)
+
+Fig 9 is from the Val directory, and PNEUMONIA sub-directory, and the model correctly predicts the class of the image (PNEUMONIA).
+
+![](Images_Pneumonia_Research/res1.png)
+
+
+The above image (Fig 10) is from the test directory and Normal sub-directory and the model correctly predicts the class of the image (Normal).
+
