@@ -72,3 +72,5 @@ Fig 9 is from the Val directory, and PNEUMONIA sub-directory, and the model corr
 
 The above image (Fig 10) is from the test directory and Normal sub-directory and the model correctly predicts the class of the image (Normal).
 
+# Deployment
+
