@@ -75,3 +75,11 @@ The above image (Fig 10) is from the test directory and Normal sub-directory and
 # Deployment
 
 The trained model is then converted to a .JSON file using the tensorflowJS-converter. [11] This converter function saves the.JSON model along with some sharded weights associated with the model.json file in a binary format, all of which are saved in the path specified. TensorFlow.js provides model loading APIs that can be used to fetch these model assets and run inference in the browser. 
+
+![](Images_Pneumonia_Research/dep_1.png)
+
+To load the JSON file we use “tf.loadLayersModel()” with the path for the specified model. The model is hosted on a web server along with sharded weights, and the path where it is hosted is provided as a path link in the javascript file.
+After successfully loading the model in the browser, next up is the inference part. For the prediction, we need to load the image into the browser. This is done by using the getElementById() method. Next up is creating a tf.Tensor form an image. After resizing and normalizing the image tensor, it can be fed into the model.predict()  method as a 4D tensor by specifying its shape and image size. 
+
+![](Images_Pneumonia_Research/dep_2.png)
+
