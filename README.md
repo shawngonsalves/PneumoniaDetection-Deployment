@@ -74,3 +74,4 @@ The above image (Fig 10) is from the test directory and Normal sub-directory and
 
 # Deployment
 
+The trained model is then converted to a .JSON file using the tensorflowJS-converter. [11] This converter function saves the.JSON model along with some sharded weights associated with the model.json file in a binary format, all of which are saved in the path specified. TensorFlow.js provides model loading APIs that can be used to fetch these model assets and run inference in the browser. 
