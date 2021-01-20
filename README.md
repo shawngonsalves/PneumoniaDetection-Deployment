@@ -83,3 +83,4 @@ After successfully loading the model in the browser, next up is the inference pa
 
 ![](Images_Pneumonia_Research/dep_2.png)
 
+![](Images_Pneumonia_Research/dep_3.png)
