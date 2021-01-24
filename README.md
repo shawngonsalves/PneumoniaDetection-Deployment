@@ -84,3 +84,5 @@ After successfully loading the model in the browser, next up is the inference pa
 ![](Images_Pneumonia_Research/dep_2.png)
 
 ![](Images_Pneumonia_Research/dep_3.png)
+
+Once a new picture has been uploaded we use the Predict button to do the prediction of the image. To compare the prediction, we check if the predicted value is positive or negative. According to the labeling, if the value is greater than 0, it is a Normal image else it is a Pneumonia positive image. As shown in the above picture, it sends out an alert to the tab in the browser where the inference takes place.
