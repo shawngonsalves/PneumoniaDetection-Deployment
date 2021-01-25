@@ -88,3 +88,5 @@ After successfully loading the model in the browser, next up is the inference pa
 Once a new picture has been uploaded we use the Predict button to do the prediction of the image. To compare the prediction, we check if the predicted value is positive or negative. According to the labeling, if the value is greater than 0, it is a Normal image else it is a Pneumonia positive image. As shown in the above picture, it sends out an alert to the tab in the browser where the inference takes place.
 
 # Conclusion
+
+The trained model reported impressive results when it was trained for 60 epochs. The resulting training accuracy was 0.9484, and training loss was 0.1260.  
