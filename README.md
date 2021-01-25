@@ -90,3 +90,5 @@ Once a new picture has been uploaded we use the Predict button to do the predict
 # Conclusion
 
 The trained model reported impressive results when it was trained for 60 epochs. The resulting training accuracy was 0.9484, and training loss was 0.1260. . The training loss is significantly lower due to the data Augmentation and pre-processing which helps the model train better with more variation of images and not rely on the weights to memorize the data. The goal of training a model is to find a set of weights and biases such that the loss attains its minimum value, on average, across all examples.
+![](Images_Pneumonia_Research/Cncl_1.png)
+
